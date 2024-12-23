@@ -1,0 +1,169 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+%-------------------------------------------------------------------------------
+% CONFIGURATION
+%-------------------------------------------------------------------------------
+\moderncvstyle{classic} % style options: casual, classic, banking, oldstyle
+\moderncvcolor{blue}    % color options: blue, orange, green, red, purple, grey, black
+\nopagenumbers{}        % suppress automatic page numbering
+
+\usepackage[scale=0.75]{geometry} % adjust the page margins
+\setlength{\hintscolumnwidth}{3cm} % adjust the width of the column with dates
+
+%-------------------------------------------------------------------------------
+% PERSONAL DATA
+%-------------------------------------------------------------------------------
+\name{Rihito}{Arai}
+\title{Senior Software Engineer / Tech Lead | 6+ Years in Go, Ruby, Python, and Cloud}
+\address{}{Toronto, Canada} % City, Country
+\phone{+1 (437) 298-9908}
+\email{licht.e.jima@gmail.com}
+\social[linkedin]{rihito}
+\social[github]{rhty}
+% You could add more if you like, e.g.:
+% \social[stackoverflow]{1234567}
+% \homepage{https://your-website.com}
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+% NAME AND TITLE
+%-------------------------------------------------------------------------------
+\makecvtitle
+
+%-------------------------------------------------------------------------------
+% SUMMARY
+%-------------------------------------------------------------------------------
+\section{Professional Summary}
+A proactive, team-oriented \textbf{Senior Software Engineer / Tech Lead} with \textbf{6+ years} of experience in designing and implementing scalable backend services using \textbf{Go, Ruby, and Python}.
+Takes ownership to “do the right thing” by enforcing high standards of quality, security, and testing.
+Skilled in microservices, Kubernetes, Terraform, and modern cloud platforms (AWS, GCP).
+Adept at bridging communication between business and dev teams in bilingual/cross-cultural environments.
+Has led sub-teams of up to four engineers, driving a healthy engineering culture and delivering critical features.
+
+%-------------------------------------------------------------------------------
+% KEY SKILLS
+%-------------------------------------------------------------------------------
+\section{Key Skills}
+\cvitem{Backend \& Languages}{Go (go-kit, echo, gin), Ruby on Rails, Python (Flask, FastAPI, aiohttp)}
+\cvitem{Frontend (Basic)}{React.js (simple admin UIs), Nuxt.js (partial usage)}
+\cvitem{Infrastructure \& DevOps}{AWS (EKS, EC2, S3, Lambda, etc.), GCP (GKE, CloudRun, CloudSQL, Pub/Sub, Cloud Build, Firebase), Heroku, Kubernetes, Terraform, GitHub Actions, GitLab CI/CD, Monitoring (Datadog, Sentry), CDN (Fastly, Cloudflare)}
+\cvitem{Databases}{PostgreSQL, MySQL, Redis, DynamoDB}
+\cvitem{Security}{Implemented encryption \& compliance for sensitive data (e.g., MyNumber, Japan’s government-issued ID system, similar to SIN in Canada)}
+\cvitem{Agile \& Communication}{Scrum Master experience, English/Japanese bilingual, TDD \& code review advocacy}
+\cvitem{Languages}{Japanese (Native), English (Business), Spanish (Beginner)}
+
+%-------------------------------------------------------------------------------
+% EXPERIENCE
+%-------------------------------------------------------------------------------
+\section{Work Experience}
+
+% -- WealthPark
+\subsection{WealthPark Co., Ltd.}
+\cventry
+    {Senior Software Engineer / (Acting) Tech Lead}
+    {Nov 2021 -- Present}
+    {Tokyo, Japan (Remote)}
+    {}
+    {
+      \begin{itemize}
+        \item \textbf{Access Control Service (Nov--Dec 2021)}:
+        Created a Go (go-kit) microservice on AWS EKS to manage role-based permissions with Ory Keto.
+        Secured user access across multiple internal apps, collaborating with ID management teams.
+        \item \textbf{Data Migration (Jan--Mar 2022)}:
+        Developed pipelines (Python, Airflow, AWS Lambda) to integrate external real estate data.
+        Enabled smooth onboarding of new partners, reducing ad-hoc data handling.
+        \item \textbf{Alternative Investment Project (Apr 2022 -- Present)}:
+        \begin{itemize}
+          \item Joined at inception, clarifying ambiguous business requirements and implementing investor registration \& fund management features (Go microservices + gRPC).
+          \item Led a sub-team of four engineers during growth phases, introducing unit tests and code review best practices. Code coverage increased from 0\% to \textasciitilde60\% overall; new features reached \textasciitilde90\%.
+          \item Dealt with \textbf{MyNumber} data (similar to SIN), ensuring encryption and compliance with government regulations.
+          \item Operated in a 90\% English-speaking environment, bridging communications between global dev teams and Japanese stakeholders.
+        \end{itemize}
+        \item \textbf{Key Achievements}:
+        \begin{itemize}
+          \item Established a strong testing culture, significantly reducing production defects and enabling more frequent releases.
+          \item Proactively dismantled silos between the “design team” (Japanese) and the international dev team (English).
+        \end{itemize}
+      \end{itemize}
+    }
+
+% -- WED
+\subsection{WED, Inc.}
+\cventry
+    {Server-Side Engineer / Scrum Master}
+    {Jun 2019 -- Oct 2021}
+    {Tokyo, Japan}
+    {}
+    {
+      \begin{itemize}
+        \item Built and maintained backend services in Go, Ruby on Rails, Python on GCP (Kubernetes, GKE).
+        \item Resolved critical concurrency issues in a high-traffic money management service (\textasciitilde100K MAU), preventing data inconsistency before it impacted end users.
+        \item Served as Scrum Master, introducing agile ceremonies, code review guidelines, and linting tools to reduce bottlenecks and enhance team autonomy.
+        \item \textbf{Key Contribution}: Detected transaction-level bugs that could have led to double-commits and inconsistent records, ensuring financial data integrity.
+      \end{itemize}
+    }
+
+% -- FiNC
+\subsection{FiNC Technologies, Inc.}
+\cventry
+    {Intern Server-Side Engineer}
+    {Oct 2018 -- Jun 2019}
+    {Tokyo, Japan}
+    {}
+    {
+      \begin{itemize}
+        \item Developed REST APIs with Ruby on Rails for health/fitness mobile apps (iOS/Android).
+        \item Integrated OAuth2.0-based social logins (LINE, Facebook).
+        \item Gained foundational skills in microservice design, DB architecture, and user authentication.
+      \end{itemize}
+    }
+
+% -- Freelance
+\subsection{Freelance / Side Projects}
+\cventry
+    {}
+    {Feb 2020 -- Present}
+    {}
+    {}
+    {
+      \begin{itemize}
+        \item \textbf{Meditation App Backend (Ruby on Rails, GCP)}:
+        Single-handedly built user management and audio content features; deployed via Terraform on GCP.
+        \item \textbf{Buy-Now-Pay-Later Credit Service (Go)}:
+        Contributed to API implementations with a Vietnam-based team, focusing on payment logic.
+        \item \textbf{LINE Chatbots}:
+        Automated periodic notifications via Docker-deployed Ruby apps.
+        \item \textbf{Hyper-casual Game Development}:
+        Created Unity prototypes (C\#), exploring casual mobile game mechanics.
+      \end{itemize}
+    }
+
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\section{Education}
+
+\cventry
+    {M.Eng. in Electrical Engineering \& Information Systems}
+    {The University of Tokyo}
+    {Sep 2021}
+    {}
+    {
+      \begin{itemize}
+        \item Researched entity matching algorithms for receipts (Python, ML).
+      \end{itemize}
+    }
+
+\cventry
+    {B.Eng. in Applied Physics}
+    {Hokkaido University}
+    {Mar 2017}
+    {}
+    {
+      \begin{itemize}
+        \item Studied complex network theory and computational methods (Fortran).
+      \end{itemize}
+    }
+
+\end{document}
