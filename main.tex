@@ -3,8 +3,7 @@
 %-------------------------------------------------------------------------------
 % CONFIGURATION
 %-------------------------------------------------------------------------------
-\usepackage{anyfontsize}
-\moderncvstyle{classic} % style options: casual, classic, banking, oldstyle
+\moderncvstyle[nosymbols]{classic} % style options: casual, classic, banking, oldstyle
 \moderncvcolor{orange}    % color options: blue, orange, green, red, purple, grey, black
 \nopagenumbers{}        % suppress automatic page numbering
 
@@ -20,10 +19,9 @@
 \renewcommand*{\addressfont}{\small\mdseries\raggedright}
 
 \name{Rihito}{Arai}
-\title{Senior Software Engineer / Tech Lead}
-\address{}{Toronto, Canada} % City, Country
-\phone{+1 (437) 298-9908}
-\phone{+81 (90) 7948-0077}
+\title{Senior Software Engineer}
+\address{}{Nagano, Japan} % City, Country
+\phone[mobile]{+81 (90) 7948-0077}
 \email{licht.e.jima@gmail.com}
 \social[linkedin]{rihito}
 \social[github]{rhty}
@@ -39,52 +37,83 @@
 % SUMMARY
 %-------------------------------------------------------------------------------
 \section{Professional Summary}
-A proactive, team-oriented \textbf{Senior Software Engineer / Tech Lead} with \textbf{6+ years} of experience in designing and implementing scalable backend services using \textbf{Go, Ruby, and Python}.
-Takes ownership to “do the right thing” by enforcing high standards of quality, security, and testing—even in legacy or poorly maintained codebases.
-Skilled in microservices, Kubernetes, Terraform, and modern cloud platforms (AWS, GCP).
-Adept at bridging communication between business and dev teams in bilingual/cross-cultural environments.
-Has led teams and supported junior engineers through mentorship and technical knowledge-sharing.
-Brings a self-driven mindset and takes initiative from the engineering side to improve code quality, team workflows, and overall system architecture.
+A hands-on \textbf{Senior Software Engineer and CTO} with \textbf{7+ years} of experience building backend platforms and AI-enabled products with \textbf{Go and TypeScript}.
+Leads product architecture and delivery across LLM pipelines, backend services, cloud infrastructure, and internal tools.
+Proven track record of designing multitenant access-control architectures, improving testing and release processes in legacy systems, and taking products from requirements to production.
+Effective at bridging business and engineering teams in bilingual, cross-cultural environments, with professional experience in both Japan and Canada.
 
 %-------------------------------------------------------------------------------
 % AVAILABILITY
 %-------------------------------------------------------------------------------
 \section{Availability}
-Currently seeking part-time, fully remote opportunities.
-Available for full-time engagement from mid-September to December 2025, and part-time (80-100 hours/month) thereafter.
+Available from August 2026 for fully remote engagements.
+Seeking project-based full-time contracts of up to six months, or longer-term part-time work of approximately 25 hours per week.
+Particularly interested in opportunities with English-speaking international teams.
 
 %-------------------------------------------------------------------------------
 % KEY SKILLS
 %-------------------------------------------------------------------------------
 \section{Key Skills}
-\cvitem{Backend \& Languages}{Go, Ruby, Python, TypeScript}
-\cvitem{Frontend (Basic)}{React.js (simple admin UIs)}
-\cvitem{Infrastructure \& DevOps}{AWS (EKS, EC2, S3, Lambda, etc.), GCP (GKE, CloudRun, CloudSQL, Pub/Sub, Cloud Build, Firebase, etc.), Heroku, Kubernetes, Terraform, GitHub Actions, GitLab CI/CD, Monitoring (Datadog, Sentry), CDN (Fastly, Cloudflare)}
+\cvitem{Backend \& Languages}{Go, TypeScript (NestJS), Ruby, Python, Google Apps Script}
+\cvitem{AI \& Data}{Multi-model LLM pipeline design, OpenAI / Anthropic / Google APIs, data warehouse pipelines, AI-assisted data operations}
+\cvitem{Frontend}{React, Angular, shadcn/ui, MUI}
+\cvitem{Infrastructure \& DevOps}{AWS, GCP (Cloud Run, GKE, Cloud SQL, Pub/Sub, Cloud Build, Firebase), Docker, Kubernetes, Terraform, GitHub Actions, GitLab CI/CD, Jenkins, Datadog, Sentry, Fastly, Cloudflare}
 \cvitem{Databases}{PostgreSQL, MySQL, MSSQL, Redis, DynamoDB}
-\cvitem{Security}{Implemented encryption \& compliance for sensitive data (e.g., MyNumber, Japan’s government-issued ID system, similar to SIN in Canada)}
-\cvitem{Testing \& Quality}{CI/CD pipelines, legacy code refactoring, test coverage improvement}
-\cvitem{Third Party Services}{OAuth2.0 (LINE, Facebook), Stripe, Ory Keto / Kratos, etc...}
-\cvitem{Agile \& Communication}{Scrum Master, TDD \& code review advocacy, OpenAPI/Swagger, gRPC or GraphQL for API designing}
+\cvitem{Architecture \& Security}{Microservices, multitenancy, ACL / RBAC, encryption and compliance for sensitive personal data}
+\cvitem{APIs \& Integrations}{REST, OpenAPI / Swagger, gRPC, GraphQL, OAuth 2.0, Stripe, Ory Keto / Kratos}
+\cvitem{Quality \& Leadership}{Technical leadership, CI/CD, legacy refactoring, test strategy, code review, Scrum Master}
 \cvitem{Languages}{Japanese (Native), English (Business; 3+ years of professional experience), Spanish (Beginner)}
 
 %-------------------------------------------------------------------------------
 % EXPERIENCE
 %-------------------------------------------------------------------------------
 \section{Work Experience}
+% -- VisionCompass
+\cventry
+    {Apr 2026 -- Present}
+    {CTO}
+    {VisionCompass Inc.}
+    {Japan (Remote)}
+    {}
+    {
+      \begin{itemize}
+        \item Lead backend, infrastructure, AI, and admin-platform development for \textbf{Neruzo}, an AI-powered journaling and sleep application launched on July 13, 2026.
+        \item Architected and implemented a flexible, graph-based LLM pipeline with configurable nodes and conditional branching across OpenAI, Anthropic, and Google models to summarize journals, analyze conversations, and organize users' thought patterns.
+        \item Built a Dockerized Go backend on GCP Cloud Run with Supabase, plus a React and shadcn/ui administration platform.
+        \item Implemented database-backed asynchronous processing with polling Cloud Run workers and concurrent execution to use LLM API wait time efficiently.
+      \end{itemize}
+    }
+
+% -- COTEN
+\cventry
+    {Aug 2025 -- Jul 2026}
+    {Software Engineer (Contract)}
+    {COTEN Inc.}
+    {Japan (Remote)}
+    {}
+    {
+      \begin{itemize}
+        \item Designed and implemented AI-powered Google Sheets tooling in TypeScript and Google Apps Script, automating world-history data curation tasks that were impractical to perform manually.
+        \item Led the design and implementation of multitenancy, organization models, and ACLs for a data-warehouse-as-a-service platform.
+        \item Designed and implemented data pipelines and backend APIs using TypeScript and NestJS.
+        \item Managed a Bangladesh-based engineering team and collaborated on the technical design of a React administration UI migration from MUI to shadcn/ui.
+      \end{itemize}
+    }
+
 % -- CIBC
 \cventry
-    {Jan 2025 -- Present}
+    {Jan 2025 -- Oct 2025}
     {Senior Applications Developer}
     {CIBC (Canadian Imperial Bank of Commerce)}
     {Toronto, Canada (Hybrid)}
     {}
     {
       \begin{itemize}
-        \item Proposed and implemented improvements to internal APIs, including new schema designs and reverse proxy integration between legacy and new systems.
-        \item Refactored and stabilized poorly tested legacy codebases, improving maintainability and reducing bugs in production.
-        \item Discovered and reported security vulnerabilities and data inconsistency issues; actively contributed to resolving them.
-        \item Led internal knowledge-sharing sessions for a few junior engineers to improve team competency in backend architecture and CI/CD.
-        \item Took initiative from the engineering side to propose architectural improvements, raising code quality and development speed across the team.
+        \item Developed and stabilized an internal corporate-security case-management and assessment platform using Go, TypeScript / Angular, MSSQL, and Windows Server.
+        \item Gained stakeholder support to include refactoring and automated testing in the delivery plan, helping the team achieve stable releases with few observed errors.
+        \item Improved Jenkins pipelines and standardized the release workflow, reducing friction and risk during deployments.
+        \item Proposed and implemented internal API improvements, including new schemas and reverse-proxy integration between legacy and new systems; also identified security and data-consistency issues.
+        \item Contributed to a delivery recognized by department leadership as its most successful project, while mentoring junior engineers through backend and CI/CD knowledge-sharing sessions.
       \end{itemize}
     }
 
@@ -97,22 +126,13 @@ Available for full-time engagement from mid-September to December 2025, and part
     {}
     {
       \begin{itemize}
-        \item \textbf{Access Control Service (Nov--Dec 2021)}:
-        Created a Go (go-kit) microservice on AWS EKS to manage role-based permissions with Ory Keto.
-        Secured user access across multiple administration apps.
-        \item \textbf{Data Migration (Jan--Mar 2022)}:
-        Developed pipelines (Python, Airflow, AWS Lambda) to integrate external real estate data.
-        \item \textbf{Alternative Investment Project (Apr 2022 -- Present)}:
+        \item Built a Go (go-kit) access-control microservice on AWS EKS with Ory Keto and developed Python / Airflow / AWS Lambda pipelines for external real estate data.
+        \item \textbf{Alternative Investment Project (Apr 2022 -- Feb 2025)}:
         \begin{itemize}
-          \item Joined at inception, clarifying ambiguous business requirements and implementing investor registration \& fund management features (Go microservices + gRPC).
-          \item Led a sub-team of four engineers during implementing investment features, introducing unit tests and code review best practices. Code coverage increased from $30\%$ to $\sim 70\%$ overall; new features reached $\sim90\%$.
+          \item Joined at inception, clarified ambiguous requirements, and implemented investor registration and fund management features with Go microservices and gRPC.
+          \item Led four engineers and introduced unit testing and code review practices, raising overall coverage from $30\%$ to $\sim70\%$ and new-feature coverage to $\sim90\%$.
           \item Dealt with MyNumber data (similar to SIN), ensuring encryption and compliance with government regulations.
-          \item Operated in a English-speaking environment, bridging communications between global dev teams and Japanese stakeholders.
-        \end{itemize}
-        \item \textbf{Key Achievements}:
-        \begin{itemize}
-          \item Established a strong testing culture, significantly reducing production defects and enabling more frequent releases.
-          \item Proactively dismantled silos between the “system design team” (Japanese) and the international dev team (English).
+          \item Operated in an English-speaking environment, bridging communications between global dev teams and Japanese stakeholders.
         \end{itemize}
       \end{itemize}
     }
@@ -161,8 +181,6 @@ Available for full-time engagement from mid-September to December 2025, and part
         Enhanced pipeline reliability and developer UX by organizing legacy scripts and adding new UI components.
         \item \textbf{Meditation App Backend (Ruby on Rails, GCP)}:
         Single-handedly built user management and audio content features; deployed via Terraform on GCP.
-        \item \textbf{Buy-Now-Pay-Later Credit Service (Go)}:
-        Contributed to API implementations with a Vietnam-based team, focusing on payment logic.
       \end{itemize}
     }
 
